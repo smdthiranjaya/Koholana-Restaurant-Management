@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 99vh;
+    margin: -20px 0 50px;
+}
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+span {
+    font-size: 12px;
+}
+
+a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+
+form {
+    background-color: #fbb034;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    min-height: 523px;
+    max-height:530px;
+    width: 366px;
+    text-align: center;
+}
+
+input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 10px;
+    width: 220px;
+    border-radius: 8px;
+    transition-duration: 0.25s;
+}
+
+input:hover {
+    background-color: #F0FFFF;
+
+}
+
+form input:focus {
+    background-color: white;
+    width: 240px;
+    border-radius: 20px !important;
+    outline: none;
+}
+textarea {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 10px;
+    width: 220px;
+    border-radius: 8px;
+    transition-duration: 0.25s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+textarea:hover {
+    background-color: #F0FFFF;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+form textarea:focus {
+    background-color: white;
+    width: 240px;
+    border-radius: 20px !important;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.landing {
+    position: fixed;
+    width: 100%;
+    height: 99vh;
+    display: table;
+    content: "";
+    z-index: -4;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80");
+}
+
+.opac {
+    position: fixed;
+    width: 100%;
+    height: 99vh;
+    display: table;
+    content: "";
+    z-index: -4;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 15px !important;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 366px !important;
+    height: 523px !important;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-up-container {
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: yellow;
+    text-decoration: none;
+}
+
